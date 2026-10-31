@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline' https://static.cloudflareinsights.com; connect-src https://cloudflareinsights.com; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Checklist do soldado">
+<meta name="description" content="Missões do dia do canal Tropa da Erika Hilton com Lula, por manhã, tarde e noite, com link e texto pronto. Resumo automático e não oficial: confira no canal.">
+<meta property="og:description" content="Missões do dia do canal Tropa da Erika Hilton com Lula, por manhã, tarde e noite, com link e texto pronto. Resumo automático e não oficial: confira no canal.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://checklistdosoldado.com.br/tropa-da-erika-hilton/">
+<title>Checklist do soldado</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--bg:#f6f4ef;--surface:#fff;--text:#1c1b19;--muted:#5c5850;--line:#e0dbd0;--accent:#0b6b66;--accent-ink:#fff;
+--chip:#ece6da;--ok:#1f7a3d;--warn-bg:#fff3d1;--warn-ink:#5a4300;--stop-bg:#fde7e4;--stop-ink:#7a1d12;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121211;--surface:#1c1c1a;--text:#ecebe7;
+--muted:#a8a49b;--line:#33322e;--accent:#4cc3b8;--accent-ink:#0c1a19;--chip:#2a2926;--ok:#6fd08f;--warn-bg:#3a3010;
+--warn-ink:#f3dd9a;--stop-bg:#3d1713;--stop-ink:#f7b8ad;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121211;--surface:#1c1c1a;--text:#ecebe7;--muted:#a8a49b;--line:#33322e;--accent:#4cc3b8;
+--accent-ink:#0c1a19;--chip:#2a2926;--ok:#6fd08f;--warn-bg:#3a3010;--warn-ink:#f3dd9a;--stop-bg:#3d1713;--stop-ink:#f7b8ad;color-scheme:dark}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.topo,main,.rodape{max-width:720px;margin:0 auto;padding:0 16px}
+.topo{padding-top:16px}
+.info{margin:0 0 10px}
+.info>summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;align-items:center;gap:2px 8px;min-height:48px}
+.info>summary::-webkit-details-marker{display:none}
+.info .saiba{margin-left:auto;padding:6px 12px;border:2px solid var(--accent);border-radius:999px;color:var(--accent);
+font-weight:700;font-size:.9rem;white-space:nowrap}
+.info .saiba::after{content:"Saiba mais ▾"}.info[open] .saiba::after{content:"Fechar ▴"}
+.info>summary:hover .saiba{background:var(--accent);color:var(--accent-ink)}
+.info-sub{flex-basis:100%;color:var(--muted);font-size:.9rem}
+.info-corpo{padding:8px 0 4px}.info-corpo>p{margin:0 0 12px}
+h1{font-size:1.5rem;line-height:1.2;margin:0}
+.tema{min-height:44px;padding:0 14px;margin:4px 0 6px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text);font:inherit;font-size:.95rem;cursor:pointer}
+.sub{color:var(--muted);font-size:.95rem;margin:8px 0 12px}
+.atualizado{display:flex;flex-wrap:wrap;align-items:center;gap:2px 6px;margin:0 0 10px;padding:10px 14px;
+border:2px solid var(--accent);border-radius:12px;background:var(--surface);font-size:1rem}
+.atualizado strong{font-size:1.1rem}.atualizado .ha{color:var(--muted);flex-basis:100%;font-size:.9rem}.atualizado .ha:empty{display:none}
+.atualizado.velho{border-color:var(--warn-ink);background:var(--warn-bg);color:var(--warn-ink)}.atualizado.velho .ha{color:inherit}
+.topo-linha{display:flex;align-items:center;min-height:48px}
+.btn-canal{margin:0 0 4px}
+.aviso,.faixa-congelada,.congelado-dia,.pausado{border-radius:12px;padding:12px 14px;margin:0 0 12px;font-weight:600}
+.aviso{background:var(--warn-bg);color:var(--warn-ink);font-weight:500;font-size:.95rem}
+.faixa-congelada,.congelado-dia,.pausado{background:var(--stop-bg);color:var(--stop-ink)}
+.pausado{margin-top:24px;font-size:1.2rem;text-align:center;padding:24px 16px}
+.agenda{list-style:none;margin:0 0 12px;padding:0}
+.agenda li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:.95rem}
+.dias{position:sticky;top:0;z-index:2;display:flex;gap:8px;padding:10px 0;background:var(--bg);overflow-x:auto}
+.dia-btn{flex:1;min-width:0;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px 8px;
+border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text);text-decoration:none;font-size:.85rem;line-height:1.2;white-space:nowrap}
+.dia-btn .rel{font-weight:700;font-size:1rem}
+.dia-btn[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.rel{text-transform:capitalize}
+.dia-titulo{font-size:1.1rem;margin:12px 0 8px;text-transform:capitalize;color:var(--muted)}
+.janela{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin:0 0 12px;overflow:hidden}
+.janela>summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:14px 16px;min-height:56px}
+.janela>summary::-webkit-details-marker{display:none}
+.janela>summary::after{content:"▾";margin-left:auto;color:var(--muted);transition:transform .15s}
+.janela[open]>summary::after{transform:rotate(180deg)}
+.j-nome{font-weight:700;font-size:1.1rem}.j-faixa{color:var(--muted);font-size:.9rem}
+.j-qtd{font-size:.85rem;background:var(--chip);border-radius:999px;padding:2px 10px}
+.j-agora{font-size:.8rem;font-weight:700;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:2px 10px}
+.j-corpo{padding:0 16px 16px;border-top:1px solid var(--line)}
+.chip{display:inline-block;font-size:.75rem;font-weight:600;background:var(--chip);color:var(--muted);border-radius:999px;padding:1px 8px;vertical-align:middle}
+.foco{margin:14px 0}
+.nota{margin:14px 0;padding:10px 12px;border-radius:10px;background:var(--warn-bg);color:var(--warn-ink);font-size:.95rem}
+.nota .hora-link{color:inherit;text-decoration:underline}
+.vazia{color:var(--muted);margin:14px 0}
+.sem-missoes{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 16px;margin:0 0 12px}
+.sem-missoes p{margin:0}.sem-missoes p+p{margin-top:8px;color:var(--muted);font-size:.95rem}
+.ver-ontem{margin:4px 0 12px;font-size:.95rem;color:var(--muted)}
+.vitoria{border:2px solid var(--accent);border-radius:16px;background:var(--surface);padding:18px 14px;margin:8px 0 12px;text-align:center}
+.vt-tit{font-size:1.6rem;font-weight:800;line-height:1.2;margin:0 0 10px;color:var(--accent)}
+.vt-txt{margin:0 0 8px;font-size:1.05rem}
+.vt-missao{margin:10px 0 4px;padding:10px 12px;border-radius:12px;background:var(--bg);font-size:1.05rem}.vt-missao strong{font-size:1.2rem}.vitoria .btn{margin-top:6px}
+.topo-fixo{border:2px solid var(--accent);border-radius:16px;background:var(--surface);padding:12px;margin:8px 0 4px}
+.tf-tit{margin:0 0 2px;font-weight:800;font-size:1.05rem;line-height:1.3}.tf-fonte{margin:0 0 10px;font-size:.85rem;color:var(--muted)}
+.fixado{border:2px solid var(--accent);border-radius:16px;background:var(--surface);padding:14px 12px 12px;margin:0 0 12px}
+.fx-tit{margin:0 0 6px;font-weight:800;font-size:1.1rem;line-height:1.3}.fx-txt{margin:0 0 12px}
+.ver-ontem a{color:var(--accent);font-weight:600}
+.missoes{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.card{border:1px solid var(--line);border-radius:14px;padding:14px;background:var(--bg)}
+.card.ok{opacity:.6}.card.ok .c-oque{text-decoration:line-through}
+.c-topo{display:flex;justify-content:space-between;gap:8px;font-size:.9rem;color:var(--muted);font-weight:600}
+.c-oque{margin:8px 0;font-size:1.05rem}
+.c-prazo{margin:6px 0;font-weight:700;color:var(--warn-ink);background:var(--warn-bg);display:inline-block;border-radius:8px;padding:2px 8px}
+.c-texto{margin:8px 0;padding:8px 10px;border-left:3px solid var(--accent);background:var(--surface);border-radius:6px;font-size:.95rem;
+white-space:pre-wrap;overflow-wrap:anywhere;max-height:9em;overflow:auto}
+.c-acoes{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin:12px 0 8px}
+.btn{min-height:48px;display:flex;align-items:center;justify-content:center;padding:10px 12px;border-radius:12px;border:0;
+background:var(--accent);color:var(--accent-ink);font:inherit;font-weight:700;text-decoration:none;cursor:pointer;text-align:center}
+.btn:focus-visible,.dia-btn:focus-visible,.tema:focus-visible,summary:focus-visible{outline:3px solid var(--text);outline-offset:2px}
+.btn.copiado{background:var(--ok)}
+.feito{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:600;cursor:pointer}
+.feito input{width:24px;height:24px;accent-color:var(--ok)}
+.falas{margin:14px 0 4px;padding:0 14px;background:var(--bg);border-radius:12px}
+.falas>summary{list-style:none;cursor:pointer;min-height:48px;display:flex;flex-wrap:wrap;align-items:center;gap:4px;padding-top:10px}
+.falas>summary::-webkit-details-marker{display:none}
+.f-tit{font-weight:700}.f-info{color:var(--muted);font-size:.9rem;flex-basis:100%;margin-top:-6px;padding-bottom:8px}
+.f-seta{margin-left:auto;color:var(--muted)}.f-seta::after{content:"▾"}.falas[open] .f-seta::after{content:"▴"}
+.falas[open]{padding-bottom:12px}
+.falas ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:8px}
+.falas li{font-size:.95rem}
+.falas .f-hora{font-weight:700;margin-right:6px}
+.hora-link{color:var(--accent);text-decoration:none;font-weight:700}.hora-link:hover{text-decoration:underline}.dur{color:var(--muted);font-size:.85rem;margin-right:4px}
+.dicas{margin:8px 0 16px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:0 16px}
+.dicas summary{cursor:pointer;font-weight:700;min-height:52px;display:flex;align-items:center}
+.dicas ul{margin:0 0 14px;padding-left:20px}
+.rodape{color:var(--muted);font-size:.85rem;padding-top:8px;padding-bottom:32px;border-top:1px solid var(--line);margin-top:16px}
+.rodape a{color:var(--accent)}
+body.congelado main,body.congelado .dias,body.congelado .agenda,body.congelado .aviso{display:none}
+.outros{margin:4px 0 12px;font-size:.95rem}.outros a{color:var(--accent);font-weight:600}
+.canais{list-style:none;margin:8px 0 16px;padding:0;display:grid;gap:12px}
+.canal{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px}
+.canal h2{margin:0 0 4px;font-size:1.2rem}.canal p{margin:0 0 12px;color:var(--muted)}
+.canal .canal-pausado{color:var(--stop-ink);font-weight:600}
+</style>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "8b60ff50ba45454a9cbb5033ce00b1dc"}'></script>
+</head>
+<body>
+<header class="topo"><details class="info"><summary><h1>Checklist do soldado</h1><span class="saiba" aria-hidden="true"></span><span class="info-sub">resumo <strong>não oficial</strong> do canal <strong>Tropa da Erika Hilton com Lula</strong></span></summary><div class="info-corpo"><p>Canal de WhatsApp da deputada Erika Hilton, com 903 mil seguidores. Lá as missões chegam aos montes, muitas em áudio, e somem no histórico. Aqui fica o resumo automático de cada manhã, tarde e noite. Na dúvida, vale o que está no canal.</p><a class="btn btn-canal" href="https://whatsapp.com/channel/0029VaZFDSo8qJ01Vr2NNr1e" rel="noopener noreferrer">Entrar no canal no WhatsApp</a><p class="outros"><a href="../">Ver outros canais</a></p><button class="tema" type="button">◐ Tema claro ou escuro</button></div></details><p class="atualizado"><span>🔄 Atualizado às <strong>00:00</strong> de sáb 31/10</span><span class="ha" data-iso="2026-10-31T00:00:08-03:00"></span></p><p class="faixa-congelada" hidden>Dia de eleição: sem novas missões (Lei 9.504, art. 39 §5º IV)</p><nav class="dias" aria-label="Dias"><a class="dia-btn" href="#d-2026-10-31" data-dia="2026-10-31" aria-current="true"><span class="rel">sáb</span><span>31/10</span></a><a class="dia-btn" href="#d-2026-10-30" data-dia="2026-10-30" aria-current="false"><span class="rel">sex</span><span>30/10</span></a><a class="dia-btn" href="#d-2026-10-29" data-dia="2026-10-29" aria-current="false"><span class="rel">qui</span><span>29/10</span></a></nav></header>
+<main><section class="dia" id="d-2026-10-31" data-dia="2026-10-31"><h2 class="dia-titulo">sábado, 31/10</h2><details class="janela" data-janela="madrugada" data-estado="ok" data-inicio="2026-10-31T00:00:00-03:00" data-fim="2026-10-31T06:00:00-03:00" open><summary><span class="j-nome">🌌 Madrugada</span><span class="j-faixa">0h–6h</span><span class="j-agora" hidden>agora</span><span class="j-qtd">sem missões</span></summary><div class="j-corpo"><p class="vazia">Nenhuma missão nesta janela até a última atualização.</p></div></details><details class="janela" data-janela="manha" data-estado="futura" data-inicio="2026-10-31T06:00:00-03:00" data-fim="2026-10-31T12:00:00-03:00"><summary><span class="j-nome">☀️ Manhã</span><span class="j-faixa">6h–12h</span><span class="j-agora" hidden>agora</span><span class="j-qtd">ainda não começou</span></summary><div class="j-corpo"><p class="vazia" data-vazia>Começa às 6h.</p></div></details><details class="janela" data-janela="tarde" data-estado="futura" data-inicio="2026-10-31T12:00:00-03:00" data-fim="2026-10-31T18:00:00-03:00"><summary><span class="j-nome">🌤️ Tarde</span><span class="j-faixa">12h–18h</span><span class="j-agora" hidden>agora</span><span class="j-qtd">ainda não começou</span></summary><div class="j-corpo"><p class="vazia" data-vazia>Começa às 12h.</p></div></details><details class="janela" data-janela="noite" data-estado="futura" data-inicio="2026-10-31T18:00:00-03:00" data-fim="2026-11-01T00:00:00-03:00"><summary><span class="j-nome">🌙 Noite</span><span class="j-faixa">18h–0h</span><span class="j-agora" hidden>agora</span><span class="j-qtd">ainda não começou</span></summary><div class="j-corpo"><p class="vazia" data-vazia>Começa às 18h.</p></div></details><p class="ver-ontem" data-ver-ontem>Ver também a <a href="#d-2026-10-30" data-ir-dia="2026-10-30">noite de ontem</a>.</p></section><section class="dia" id="d-2026-10-30" data-dia="2026-10-30" hidden><h2 class="dia-titulo">sexta, 30/10</h2><details class="janela" data-janela="noite" data-estado="ok" data-inicio="2026-10-30T18:00:00-03:00" data-fim="2026-10-31T00:00:00-03:00"><summary><span class="j-nome">🌙 Noite</span><span class="j-faixa">18h–0h</span><span class="j-agora" hidden>agora</span><span class="j-qtd">sem missões</span></summary><div class="j-corpo"><p class="vazia">Nenhuma missão nesta janela até a última atualização.</p></div></details><details class="janela" data-janela="tarde" data-estado="ok" data-inicio="2026-10-30T12:00:00-03:00" data-fim="2026-10-30T18:00:00-03:00"><summary><span class="j-nome">🌤️ Tarde</span><span class="j-faixa">12h–18h</span><span class="j-agora" hidden>agora</span><span class="j-qtd">sem missões</span></summary><div class="j-corpo"><p class="vazia">Nenhuma missão nesta janela até a última atualização.</p></div></details><details class="janela" data-janela="manha" data-estado="ok" data-inicio="2026-10-30T06:00:00-03:00" data-fim="2026-10-30T12:00:00-03:00"><summary><span class="j-nome">☀️ Manhã</span><span class="j-faixa">6h–12h</span><span class="j-agora" hidden>agora</span><span class="j-qtd">sem missões</span></summary><div class="j-corpo"><p class="vazia">Nenhuma missão nesta janela até a última atualização.</p></div></details></section><section class="dia" id="d-2026-10-29" data-dia="2026-10-29" hidden><h2 class="dia-titulo">quinta, 29/10</h2><details class="janela" data-janela="noite" data-estado="ok" data-inicio="2026-10-29T18:00:00-03:00" data-fim="2026-10-30T00:00:00-03:00"><summary><span class="j-nome">🌙 Noite</span><span class="j-faixa">18h–0h</span><span class="j-agora" hidden>agora</span><span class="j-qtd">4 missões</span></summary><div class="j-corpo"><p class="foco"><span class="chip">resumo automático</span> Pressionar pela CPI das Big Techs, postar card em defesa dos povos indígenas e seguir o perfil da Apib no Instagram.</p><ol class="missoes"><li class="card" data-id="a41e30fcac7d"><div class="c-topo"><span class="c-tipo">❤️ Curtir / comentar post</span><span class="c-hora"><a class="hora-link" href="https://whatsapp.com/channel/0029VaZFDSo8qJ01Vr2NNr1e/739" target="_blank" rel="noopener noreferrer" title="ver no canal">18:05 ↗</a></span></div><p class="c-oque">Assistir ao reel indicado pelo canal e assinar o requerimento da CPI das Big Techs.</p><div class="c-acoes"><a class="btn" href="https://www.instagram.com/reel/DfF5a3it83P/" target="_blank" rel="noopener noreferrer">Abrir</a></div><label class="feito"><input type="checkbox"> Feito</label></li><li class="card" data-id="42d3741b467b"><div class="c-topo"><span class="c-tipo">📌 Outra missão</span><span class="c-hora"><a class="hora-link" href="https://whatsapp.com/channel/0029VaZFDSo8qJ01Vr2NNr1e/739" target="_blank" rel="noopener noreferrer" title="ver no canal">18:05 ↗</a></span></div><p class="c-oque">Assinar o requerimento da CPI das Big Techs no site indicado pelo canal.</p><div class="c-acoes"><a class="btn" href="https://cpibigtechs.org/" target="_blank" rel="noopener noreferrer">Abrir</a></div><label class="feito"><input type="checkbox"> Feito</label></li><li class="card" data-id="28940ec64545"><div class="c-topo"><span class="c-tipo">📸 Postar no feed / story</span><span class="c-hora"><a class="hora-link" href="https://whatsapp.com/channel/0029VaZFDSo8qJ01Vr2NNr1e/746" target="_blank" rel="noopener noreferrer" title="ver no canal">20:26 ↗</a></span></div><p class="c-oque">Postar no Instagram a imagem enviada pelo canal com a legenda sugerida.</p><p class="c-texto">🏹 PROTEJAM OS POVOS INDÍGENAS!
+
+O Brasil não pode aceitar que os povos indígenas do nosso país sejam ameaçados, perseguidos e atacados por quem se recusa a viver em um país democrático.
+
+Exigimos investigação e responsabilização dos culpados, e a devida proteção aos povos indígenas e seus territórios.
+
+#ProtejamNossosPovosIndigenas</p><div class="c-acoes"><button class="btn" type="button" data-copiar="🏹 PROTEJAM OS POVOS INDÍGENAS!
+
+O Brasil não pode aceitar que os povos indígenas do nosso país sejam ameaçados, perseguidos e atacados por quem se recusa a viver em um país democrático.
+
+Exigimos investigação e responsabilização dos culpados, e a devida proteção aos povos indígenas e seus territórios.
+
+#ProtejamNossosPovosIndigenas">Copiar texto</button><a class="btn" href="https://x.com/intent/post?text=%F0%9F%8F%B9%20PROTEJAM%20OS%20POVOS%20IND%C3%8DGENAS%21%0A%0AO%20Brasil%20n%C3%A3o%20pode%20aceitar%20que%20os%20povos%20ind%C3%ADgenas%20do%20nosso%20pa%C3%ADs%20sejam%20amea%C3%A7ados%2C%20perseguidos%20e%20atacados%20por%20quem%20se%20recusa%20a%20viver%20em%20um%20pa%C3%ADs%20democr%C3%A1tico.%0A%0AExigimos%20investiga%C3%A7%C3%A3o%20e%20responsabiliza%C3%A7%C3%A3o%20dos%20culpados%2C%20e%20a%20devida%20prote%C3%A7%C3%A3o%20aos%20povos%20ind%C3%ADgenas%20e%20seus%20territ%C3%B3rios.%0A%0A%23ProtejamNossosPovosIndigenas" target="_blank" rel="noopener noreferrer">Postar no X</a></div><label class="feito"><input type="checkbox"> Feito</label></li><li class="card" data-id="9af141fc2afa"><div class="c-topo"><span class="c-tipo">➕ Seguir página</span><span class="c-hora"><a class="hora-link" href="https://whatsapp.com/channel/0029VaZFDSo8qJ01Vr2NNr1e/751" target="_blank" rel="noopener noreferrer" title="ver no canal">20:48 ↗</a></span></div><p class="c-oque">Seguir o perfil da Apib no Instagram e chamar contatos para seguirem também.</p><p class="c-prazo">⏰ Prazo: agora</p><div class="c-acoes"><a class="btn" href="https://www.instagram.com/apiboficial" target="_blank" rel="noopener noreferrer">Abrir</a></div><label class="feito"><input type="checkbox"> Feito</label></li></ol><details class="falas"><summary><span class="f-tit">Últimas atualizações</span> <span class="f-seta"></span><span class="f-info">4 falas · última às 22:11</span></summary><span class="chip">resumo automático</span><ul><li><span class="f-hora"><a class="hora-link" href="https://whatsapp.com/channel/0029VaZFDSo8qJ01Vr2NNr1e/757" target="_blank" rel="noopener noreferrer" title="ver no canal">22:11 ↗</a></span><span class="dur" title="texto">💬</span> <span class="auto">Avisa que a meta de 20 mil novos seguidores para a Apib foi batida.</span></li><li><span class="f-hora"><a class="hora-link" href="https://whatsapp.com/channel/0029VaZFDSo8qJ01Vr2NNr1e/751" target="_blank" rel="noopener noreferrer" title="ver no canal">20:48 ↗</a></span><span class="dur" title="áudio">🎙 0:37</span> <span class="fixo">Ainda sem resumo: abra o canal no app.</span></li><li><span class="f-hora"><a class="hora-link" href="https://whatsapp.com/channel/0029VaZFDSo8qJ01Vr2NNr1e/746" target="_blank" rel="noopener noreferrer" title="ver no canal">20:26 ↗</a></span><span class="dur" title="texto">💬</span> <span class="auto">Pede que a tropa reaja no canal ao completar a primeira parte da missão, com meta de 5 mil reações, e avisa que está conferindo.</span></li><li><span class="f-hora"><a class="hora-link" href="https://whatsapp.com/channel/0029VaZFDSo8qJ01Vr2NNr1e/742" target="_blank" rel="noopener noreferrer" title="ver no canal">20:22 ↗</a></span><span class="dur" title="texto">💬</span> <span class="auto">Explica que povos indígenas estão sendo ameaçados após o segundo turno e que ela, com a Apib e outras entidades, aciona o Ministério Público dos estados.</span></li></ul></details></div></details><details class="janela" data-janela="tarde" data-estado="ok" data-inicio="2026-10-29T12:00:00-03:00" data-fim="2026-10-29T18:00:00-03:00"><summary><span class="j-nome">🌤️ Tarde</span><span class="j-faixa">12h–18h</span><span class="j-agora" hidden>agora</span><span class="j-qtd">1 missão</span></summary><div class="j-corpo"><p class="foco"><span class="chip">resumo automático</span> Pressionar vereadores da comissão especial de São Paulo, marcando os perfis deles no Instagram.</p><ol class="missoes"><li class="card" data-id="a6c7142ef631"><div class="c-topo"><span class="c-tipo">❤️ Curtir / comentar post</span><span class="c-hora"><a class="hora-link" href="https://whatsapp.com/channel/0029VaZFDSo8qJ01Vr2NNr1e/734" target="_blank" rel="noopener noreferrer" title="ver no canal">12:04 ↗</a></span></div><p class="c-oque">Marcar os vereadores da comissão especial no post indicado pelo canal e mandar DM para pressionar.</p><p class="c-texto">@rubinhonunes.sp @majorpalumbo @kenjidacivil @dra.sandratadeu @spsandrasantana</p><div class="c-acoes"><a class="btn" href="https://www.instagram.com/p/DfFOaHXR-v8" target="_blank" rel="noopener noreferrer">Abrir</a><button class="btn" type="button" data-copiar="@rubinhonunes.sp @majorpalumbo @kenjidacivil @dra.sandratadeu @spsandrasantana">Copiar texto</button></div><label class="feito"><input type="checkbox"> Feito</label></li></ol><details class="falas"><summary><span class="f-tit">Últimas atualizações</span> <span class="f-seta"></span><span class="f-info">2 falas · última às 12:10</span></summary><span class="chip">resumo automático</span><ul><li><span class="f-hora"><a class="hora-link" href="https://whatsapp.com/channel/0029VaZFDSo8qJ01Vr2NNr1e/737" target="_blank" rel="noopener noreferrer" title="ver no canal">12:10 ↗</a></span><span class="dur" title="texto">💬</span> <span class="auto">Informa que os perfis listados são de vereadores da comissão que ainda não se posicionaram.</span></li><li><span class="f-hora"><a class="hora-link" href="https://whatsapp.com/channel/0029VaZFDSo8qJ01Vr2NNr1e/733" target="_blank" rel="noopener noreferrer" title="ver no canal">12:03 ↗</a></span><span class="dur" title="áudio">🎙 1:16</span> <span class="auto">Pede pressão sobre a comissão especial que analisa o pedido de impeachment do prefeito de São Paulo. Orienta marcar os vereadores da comissão no Instagram.</span></li></ul></details></div></details><details class="janela" data-janela="manha" data-estado="ok" data-inicio="2026-10-29T06:00:00-03:00" data-fim="2026-10-29T12:00:00-03:00"><summary><span class="j-nome">☀️ Manhã</span><span class="j-faixa">6h–12h</span><span class="j-agora" hidden>agora</span><span class="j-qtd">sem missões</span></summary><div class="j-corpo"><p class="vazia">Nenhuma missão nesta janela até a última atualização.</p></div></details></section><details class="dicas"><summary>Dicas que o canal já deu</summary><ul><li>Junto da frase ou da hashtag, sempre um emoji, número ou letra.</li></ul></details></main>
+<footer class="rodape"><p>Resumo não oficial do canal Tropa da Erika Hilton com Lula · mantido por Fred Melo, apoiador · resumos automáticos podem errar: <a href="https://whatsapp.com/channel/0029VaZFDSo8qJ01Vr2NNr1e" rel="noopener noreferrer">confira no canal</a></p></footer>
+<script>
+(function(){"use strict";
+var TZ="America/Sao_Paulo",CONGELA=[["2026-10-25T00:00:00", "2026-10-26T00:00:00"]],FEITO="mpj:feito:tropa-da-erika-hilton:",REL=["hoje","ontem","anteontem"],CURTO=["dom","seg","ter","qua","qui","sex","sáb"];
+function ls(op,k,v){try{if(op==="get")return localStorage.getItem(k);if(op==="set")localStorage.setItem(k,v);else localStorage.removeItem(k);}catch(e){}return null;}
+function partes(d){var o={};try{new Intl.DateTimeFormat("en-CA",{timeZone:TZ,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",hourCycle:"h23"}).formatToParts(d).forEach(function(p){o[p.type]=p.value;});}catch(e){o={year:String(d.getFullYear()),month:("0"+(d.getMonth()+1)).slice(-2),day:("0"+d.getDate()).slice(-2),hour:String(d.getHours())};}return o;}
+function janelaAtual(d){var h=parseInt(partes(d).hour,10)%24;return h<6?"madrugada":(h<12?"manha":(h<18?"tarde":"noite"));}
+function sp(iso){return Date.parse(iso.length<=19?iso+"-03:00":iso);}
+function diff(a,b){return Math.round((Date.parse(a+"T12:00:00Z")-Date.parse(b+"T12:00:00Z"))/864e5);}
+var agora=new Date(),ms=agora.getTime(),pa=partes(agora),hoje=pa.year+"-"+pa.month+"-"+pa.day,servico=hoje,jan=janelaAtual(agora),raiz=document.documentElement;
+var ha=document.querySelector(".atualizado .ha");if(ha){var mi=Math.max(0,Math.round((ms-Date.parse(ha.getAttribute("data-iso")))/6e4));
+ha.textContent=(mi<1?"agora há pouco":mi<60?"há "+mi+" min":"há "+Math.floor(mi/60)+" h"+(mi%60?" "+mi%60+" min":""));if(mi>=60)ha.parentNode.classList.add("velho");}
+var tema=ls("get","mpj:tema");if(tema==="light"||tema==="dark")raiz.setAttribute("data-theme",tema);
+var bt=document.querySelector(".tema");if(bt)bt.addEventListener("click",function(){var at=raiz.getAttribute("data-theme");var escuro=at?at==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;var novo=escuro?"light":"dark";raiz.setAttribute("data-theme",novo);ls("set","mpj:tema",novo);});
+if(CONGELA.some(function(c){return ms>=sp(c[0])&&ms<sp(c[1]);})){document.body.classList.add("congelado");var f=document.querySelector(".faixa-congelada");if(f)f.hidden=false;}
+[].forEach.call(document.querySelectorAll(".agenda li,.fixado[data-ate],.topo-fixo[data-ate]"),function(li){if(ms>=sp(li.getAttribute("data-ate")))li.hidden=true;});
+var nav=document.querySelector(".dias"),main=document.querySelector("main");
+[].forEach.call(document.querySelectorAll("section.dia"),function(s){if(diff(hoje,s.getAttribute("data-dia"))>2)s.parentNode.removeChild(s);});
+[].forEach.call(document.querySelectorAll(".dia-btn"),function(b){var dd=diff(hoje,b.getAttribute("data-dia"));if(dd>2){b.parentNode.removeChild(b);return;}var r=b.querySelector(".rel");if(r&&dd>=0)r.textContent=REL[dd];});
+if(main&&nav&&!document.getElementById("d-"+hoje)){var s=document.createElement("section");s.className="dia";s.id="d-"+hoje;s.setAttribute("data-dia",hoje);
+var on=new Date(Date.parse(hoje+"T12:00:00Z")-864e5).toISOString().slice(0,10);
+s.innerHTML='<h2 class="dia-titulo">hoje</h2><div class="sem-missoes"><p>Sem missões por enquanto.</p></div><p class="ver-ontem">Ver também a <a href="#d-'+on+'" data-ir-dia="'+on+'">noite de ontem</a>.</p>';main.insertBefore(s,main.querySelector("section.dia")||main.firstChild);
+var a=document.createElement("a");a.className="dia-btn";a.href="#d-"+hoje;a.setAttribute("data-dia",hoje);a.innerHTML='<span class="rel">hoje</span><span>'+hoje.slice(8,10)+"/"+hoje.slice(5,7)+"</span>";nav.insertBefore(a,nav.firstChild);}
+var secoes=[].slice.call(document.querySelectorAll("section.dia")),botoes=[].slice.call(document.querySelectorAll(".dia-btn"));
+function mostrar(dia){secoes.forEach(function(s){s.hidden=s.getAttribute("data-dia")!==dia;});botoes.forEach(function(b){b.setAttribute("aria-current",b.getAttribute("data-dia")===dia?"true":"false");});}
+var alvo=(location.hash||"").replace("#d-","");if(!document.getElementById("d-"+alvo))alvo=document.getElementById("d-"+hoje)?hoje:(secoes[0]&&secoes[0].getAttribute("data-dia"));
+if(alvo)mostrar(alvo);
+botoes.forEach(function(b){b.addEventListener("click",function(ev){ev.preventDefault();var d=b.getAttribute("data-dia");mostrar(d);try{history.replaceState(null,"","#d-"+d);}catch(e){}});});
+[].forEach.call(document.querySelectorAll("[data-ver-ontem]"),function(p){if(p.parentNode.getAttribute("data-dia")!==hoje)p.parentNode.removeChild(p);});
+document.addEventListener("click",function(ev){var l=ev.target.closest&&ev.target.closest("[data-ir-dia]");if(!l)return;ev.preventDefault();var d=l.getAttribute("data-ir-dia");mostrar(d);var n=document.querySelector('#d-'+d+' details[data-janela="noite"]');if(n){n.open=true;n.scrollIntoView({block:"start"});}});
+[].forEach.call(document.querySelectorAll("section.dia"),function(s){var js=[].slice.call(s.querySelectorAll(":scope > details.janela"));if(!js.length)return;var dia=s.getAttribute("data-dia");
+function ini(d){return sp(d.getAttribute("data-inicio"));}function rank(d){if(dia===hoje&&d.getAttribute("data-janela")===jan)return 0;return ini(d)>ms?2:1;}
+js.sort(function(a,b){var ra=rank(a),rb=rank(b);if(ra!==rb)return ra-rb;return ra===2?ini(a)-ini(b):ini(b)-ini(a);});js.forEach(function(d){s.appendChild(d);});
+var vo=s.querySelector(".ver-ontem");if(vo)s.appendChild(vo);});
+[].forEach.call(document.querySelectorAll("details.janela"),function(d){var dia=d.parentNode.getAttribute("data-dia"),atual=dia===servico&&d.getAttribute("data-janela")===jan;
+if(dia===servico)d.open=atual;if(atual){var t=d.querySelector(".j-agora");if(t)t.hidden=false;}
+if(d.getAttribute("data-estado")==="futura"&&ms>=sp(d.getAttribute("data-inicio"))){var v=d.querySelector("[data-vazia]");if(v)v.textContent="Nenhuma missão até a última atualização. Confira no canal.";var q=d.querySelector(".j-qtd");if(q)q.textContent="sem missões ainda";}});
+[].forEach.call(document.querySelectorAll(".card"),function(c){var k=FEITO+c.getAttribute("data-id"),cb=c.querySelector(".feito input");if(!cb)return;
+if(ls("get",k)==="1"){cb.checked=true;c.classList.add("ok");}cb.addEventListener("change",function(){c.classList.toggle("ok",cb.checked);if(cb.checked)ls("set",k,"1");else ls("del",k);});});
+function copiado(b){if(!b.getAttribute("data-rotulo"))b.setAttribute("data-rotulo",b.textContent);b.textContent="Copiado ✓";b.classList.add("copiado");setTimeout(function(){b.textContent=b.getAttribute("data-rotulo");b.classList.remove("copiado");},1600);}
+function alt(t,b){var ta=document.createElement("textarea");ta.value=t;ta.setAttribute("readonly","");ta.style.position="fixed";ta.style.top="0";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
+try{if(document.execCommand("copy"))copiado(b);}catch(e){}document.body.removeChild(ta);}
+document.addEventListener("click",function(ev){var b=ev.target.closest&&ev.target.closest("[data-copiar]");if(!b)return;var t=b.getAttribute("data-copiar");
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(function(){copiado(b);},function(){alt(t,b);});}else alt(t,b);});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline' https://static.cloudflareinsights.com; connect-src https://cloudflareinsights.com; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Checklist do soldado">
+<meta name="description" content="Missões do dia de canais de WhatsApp de mobilização, por manhã, tarde e noite, com link e texto pronto. Resumos automáticos e não oficiais: confira no canal.">
+<meta property="og:description" content="Missões do dia de canais de WhatsApp de mobilização, por manhã, tarde e noite, com link e texto pronto. Resumos automáticos e não oficiais: confira no canal.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://checklistdosoldado.com.br/">
+<title>Checklist do soldado</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--bg:#f6f4ef;--surface:#fff;--text:#1c1b19;--muted:#5c5850;--line:#e0dbd0;--accent:#0b6b66;--accent-ink:#fff;
+--chip:#ece6da;--ok:#1f7a3d;--warn-bg:#fff3d1;--warn-ink:#5a4300;--stop-bg:#fde7e4;--stop-ink:#7a1d12;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121211;--surface:#1c1c1a;--text:#ecebe7;
+--muted:#a8a49b;--line:#33322e;--accent:#4cc3b8;--accent-ink:#0c1a19;--chip:#2a2926;--ok:#6fd08f;--warn-bg:#3a3010;
+--warn-ink:#f3dd9a;--stop-bg:#3d1713;--stop-ink:#f7b8ad;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121211;--surface:#1c1c1a;--text:#ecebe7;--muted:#a8a49b;--line:#33322e;--accent:#4cc3b8;
+--accent-ink:#0c1a19;--chip:#2a2926;--ok:#6fd08f;--warn-bg:#3a3010;--warn-ink:#f3dd9a;--stop-bg:#3d1713;--stop-ink:#f7b8ad;color-scheme:dark}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.topo,main,.rodape{max-width:720px;margin:0 auto;padding:0 16px}
+.topo{padding-top:16px}
+.info{margin:0 0 10px}
+.info>summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;align-items:center;gap:2px 8px;min-height:48px}
+.info>summary::-webkit-details-marker{display:none}
+.info .saiba{margin-left:auto;padding:6px 12px;border:2px solid var(--accent);border-radius:999px;color:var(--accent);
+font-weight:700;font-size:.9rem;white-space:nowrap}
+.info .saiba::after{content:"Saiba mais ▾"}.info[open] .saiba::after{content:"Fechar ▴"}
+.info>summary:hover .saiba{background:var(--accent);color:var(--accent-ink)}
+.info-sub{flex-basis:100%;color:var(--muted);font-size:.9rem}
+.info-corpo{padding:8px 0 4px}.info-corpo>p{margin:0 0 12px}
+h1{font-size:1.5rem;line-height:1.2;margin:0}
+.tema{min-height:44px;padding:0 14px;margin:4px 0 6px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text);font:inherit;font-size:.95rem;cursor:pointer}
+.sub{color:var(--muted);font-size:.95rem;margin:8px 0 12px}
+.atualizado{display:flex;flex-wrap:wrap;align-items:center;gap:2px 6px;margin:0 0 10px;padding:10px 14px;
+border:2px solid var(--accent);border-radius:12px;background:var(--surface);font-size:1rem}
+.atualizado strong{font-size:1.1rem}.atualizado .ha{color:var(--muted);flex-basis:100%;font-size:.9rem}.atualizado .ha:empty{display:none}
+.atualizado.velho{border-color:var(--warn-ink);background:var(--warn-bg);color:var(--warn-ink)}.atualizado.velho .ha{color:inherit}
+.topo-linha{display:flex;align-items:center;min-height:48px}
+.btn-canal{margin:0 0 4px}
+.aviso,.faixa-congelada,.congelado-dia,.pausado{border-radius:12px;padding:12px 14px;margin:0 0 12px;font-weight:600}
+.aviso{background:var(--warn-bg);color:var(--warn-ink);font-weight:500;font-size:.95rem}
+.faixa-congelada,.congelado-dia,.pausado{background:var(--stop-bg);color:var(--stop-ink)}
+.pausado{margin-top:24px;font-size:1.2rem;text-align:center;padding:24px 16px}
+.agenda{list-style:none;margin:0 0 12px;padding:0}
+.agenda li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:.95rem}
+.dias{position:sticky;top:0;z-index:2;display:flex;gap:8px;padding:10px 0;background:var(--bg);overflow-x:auto}
+.dia-btn{flex:1;min-width:0;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px 8px;
+border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text);text-decoration:none;font-size:.85rem;line-height:1.2;white-space:nowrap}
+.dia-btn .rel{font-weight:700;font-size:1rem}
+.dia-btn[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.rel{text-transform:capitalize}
+.dia-titulo{font-size:1.1rem;margin:12px 0 8px;text-transform:capitalize;color:var(--muted)}
+.janela{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin:0 0 12px;overflow:hidden}
+.janela>summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:14px 16px;min-height:56px}
+.janela>summary::-webkit-details-marker{display:none}
+.janela>summary::after{content:"▾";margin-left:auto;color:var(--muted);transition:transform .15s}
+.janela[open]>summary::after{transform:rotate(180deg)}
+.j-nome{font-weight:700;font-size:1.1rem}.j-faixa{color:var(--muted);font-size:.9rem}
+.j-qtd{font-size:.85rem;background:var(--chip);border-radius:999px;padding:2px 10px}
+.j-agora{font-size:.8rem;font-weight:700;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:2px 10px}
+.j-corpo{padding:0 16px 16px;border-top:1px solid var(--line)}
+.chip{display:inline-block;font-size:.75rem;font-weight:600;background:var(--chip);color:var(--muted);border-radius:999px;padding:1px 8px;vertical-align:middle}
+.foco{margin:14px 0}
+.nota{margin:14px 0;padding:10px 12px;border-radius:10px;background:var(--warn-bg);color:var(--warn-ink);font-size:.95rem}
+.nota .hora-link{color:inherit;text-decoration:underline}
+.vazia{color:var(--muted);margin:14px 0}
+.sem-missoes{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 16px;margin:0 0 12px}
+.sem-missoes p{margin:0}.sem-missoes p+p{margin-top:8px;color:var(--muted);font-size:.95rem}
+.ver-ontem{margin:4px 0 12px;font-size:.95rem;color:var(--muted)}
+.vitoria{border:2px solid var(--accent);border-radius:16px;background:var(--surface);padding:18px 14px;margin:8px 0 12px;text-align:center}
+.vt-tit{font-size:1.6rem;font-weight:800;line-height:1.2;margin:0 0 10px;color:var(--accent)}
+.vt-txt{margin:0 0 8px;font-size:1.05rem}
+.vt-missao{margin:10px 0 4px;padding:10px 12px;border-radius:12px;background:var(--bg);font-size:1.05rem}.vt-missao strong{font-size:1.2rem}.vitoria .btn{margin-top:6px}
+.topo-fixo{border:2px solid var(--accent);border-radius:16px;background:var(--surface);padding:12px;margin:8px 0 4px}
+.tf-tit{margin:0 0 2px;font-weight:800;font-size:1.05rem;line-height:1.3}.tf-fonte{margin:0 0 10px;font-size:.85rem;color:var(--muted)}
+.fixado{border:2px solid var(--accent);border-radius:16px;background:var(--surface);padding:14px 12px 12px;margin:0 0 12px}
+.fx-tit{margin:0 0 6px;font-weight:800;font-size:1.1rem;line-height:1.3}.fx-txt{margin:0 0 12px}
+.ver-ontem a{color:var(--accent);font-weight:600}
+.missoes{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.card{border:1px solid var(--line);border-radius:14px;padding:14px;background:var(--bg)}
+.card.ok{opacity:.6}.card.ok .c-oque{text-decoration:line-through}
+.c-topo{display:flex;justify-content:space-between;gap:8px;font-size:.9rem;color:var(--muted);font-weight:600}
+.c-oque{margin:8px 0;font-size:1.05rem}
+.c-prazo{margin:6px 0;font-weight:700;color:var(--warn-ink);background:var(--warn-bg);display:inline-block;border-radius:8px;padding:2px 8px}
+.c-texto{margin:8px 0;padding:8px 10px;border-left:3px solid var(--accent);background:var(--surface);border-radius:6px;font-size:.95rem;
+white-space:pre-wrap;overflow-wrap:anywhere;max-height:9em;overflow:auto}
+.c-acoes{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin:12px 0 8px}
+.btn{min-height:48px;display:flex;align-items:center;justify-content:center;padding:10px 12px;border-radius:12px;border:0;
+background:var(--accent);color:var(--accent-ink);font:inherit;font-weight:700;text-decoration:none;cursor:pointer;text-align:center}
+.btn:focus-visible,.dia-btn:focus-visible,.tema:focus-visible,summary:focus-visible{outline:3px solid var(--text);outline-offset:2px}
+.btn.copiado{background:var(--ok)}
+.feito{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:600;cursor:pointer}
+.feito input{width:24px;height:24px;accent-color:var(--ok)}
+.falas{margin:14px 0 4px;padding:0 14px;background:var(--bg);border-radius:12px}
+.falas>summary{list-style:none;cursor:pointer;min-height:48px;display:flex;flex-wrap:wrap;align-items:center;gap:4px;padding-top:10px}
+.falas>summary::-webkit-details-marker{display:none}
+.f-tit{font-weight:700}.f-info{color:var(--muted);font-size:.9rem;flex-basis:100%;margin-top:-6px;padding-bottom:8px}
+.f-seta{margin-left:auto;color:var(--muted)}.f-seta::after{content:"▾"}.falas[open] .f-seta::after{content:"▴"}
+.falas[open]{padding-bottom:12px}
+.falas ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:8px}
+.falas li{font-size:.95rem}
+.falas .f-hora{font-weight:700;margin-right:6px}
+.hora-link{color:var(--accent);text-decoration:none;font-weight:700}.hora-link:hover{text-decoration:underline}.dur{color:var(--muted);font-size:.85rem;margin-right:4px}
+.dicas{margin:8px 0 16px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:0 16px}
+.dicas summary{cursor:pointer;font-weight:700;min-height:52px;display:flex;align-items:center}
+.dicas ul{margin:0 0 14px;padding-left:20px}
+.rodape{color:var(--muted);font-size:.85rem;padding-top:8px;padding-bottom:32px;border-top:1px solid var(--line);margin-top:16px}
+.rodape a{color:var(--accent)}
+body.congelado main,body.congelado .dias,body.congelado .agenda,body.congelado .aviso{display:none}
+.outros{margin:4px 0 12px;font-size:.95rem}.outros a{color:var(--accent);font-weight:600}
+.canais{list-style:none;margin:8px 0 16px;padding:0;display:grid;gap:12px}
+.canal{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px}
+.canal h2{margin:0 0 4px;font-size:1.2rem}.canal p{margin:0 0 12px;color:var(--muted)}
+.canal .canal-pausado{color:var(--stop-ink);font-weight:600}
+</style>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "8b60ff50ba45454a9cbb5033ce00b1dc"}'></script>
+</head>
+<body>
+<header class="topo"><div class="topo-linha"><h1>Checklist do soldado</h1></div><p class="sub">Resumo <strong>não oficial</strong> das missões de canais de WhatsApp, por manhã, tarde e noite. Escolha o canal:</p></header>
+<main><ul class="canais"><li class="canal"><h2>EXÉRCITO DO LULA</h2><p>Canal de WhatsApp do deputado André Janones, com 10,5 milhões de seguidores.</p><a class="btn" href="exercito-do-lula/">Ver as missões</a></li><li class="canal"><h2>Tropa da Erika Hilton com Lula</h2><p>Canal de WhatsApp da deputada Erika Hilton, com 903 mil seguidores.</p><a class="btn" href="tropa-da-erika-hilton/">Ver as missões</a></li></ul></main>
+<footer class="rodape"><p>Resumos não oficiais de canais de WhatsApp · mantidos por Fred Melo, apoiador · resumos automáticos podem errar: confira sempre no canal</p></footer>
+<script>
+(function(){try{var t=localStorage.getItem("mpj:tema");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+</script>
+</body>
+</html>
